@@ -106,16 +106,177 @@
     margin-top: 20px;
 }
 .catalog-box{
-    width: 304px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px;
+    width: 275px; /* chỉnh lại cho vừa với cái div tổng */
     height: 388px;
-    background-color: #FFFFFF;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 .car-catalog{
     mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
+.car-info {
+    margin-bottom: 8px;
+}
+.car-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1A202C;
+    margin: 0;
+}
+.car-type {
+    font-size: 14px;
+    font-weight: 500;
+    color: #90A3BF;
+    margin: 0;
+}
+.car-specs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    color: #90A3BF;
+    font-size: 14px;
+}
+.car-specs div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.car-specs img {
+    width: 16px;
+    height: 16px;
+}
+
+.car-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.car-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1A202C;
+}
+
+.car-price .unit {
+    font-size: 14px;
+    font-weight: 500;
+    color: #90A3BF;
+}
+
+.rent-btn {
+    background: #3563E9;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 116px;
+    height: 44px;
+}
+
+.rent-btn:hover {
+    background: #2b4dbd;
+}
+.show-more-container {
+    text-align: center; /* căn giữa */
+    margin-top: 20px;
+}
+
+.show-more-btn {
+    padding: 10px 20px;
+    background-color: #3563E9; /* xanh dương */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 156px;
+    height: 44px;
+    margin-top: 50px;
+}
+
+.show-more-btn:hover {
+    background-color: #2b4dbd; /* xanh đậm khi hover */
+}
+.footer {
+    background-color: #fff;
+    color: #333;
+    padding: 50px 20px 30px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-logo h2 {
+    color: #3b5bff; /* giống màu Morent */
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.link-column h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.link-column a {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link-column a:hover {
+    color: #3b5bff;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #999;
+}
+
+.footer-bottom-links a {
+    margin-left: 20px;
+    color: #999;
+    text-decoration: none;
+}
+
+
+
 
 
