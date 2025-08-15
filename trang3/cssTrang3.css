@@ -2,31 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 1440px;
+    height: 2620px;
 }
 
 .NavBarTop{
     width: 100%;
     max-width: 1440px;
     height: 124px;
-    background-color: #FFFFFF;
-}
-
-.content{
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 1440px;
-    height: 2016px;
-    top: 124px;
-    background-color: #F6F7F9;
-}
-
-.footer{
-    width: 100%;
-    max-width: 1440px;
-    height: 480px;
-    top: 2140px;
     background-color: #FFFFFF;
 }
 
@@ -45,12 +28,75 @@
     color: #3563E9;
 }
 
-.NavBarSide{
-    width: 100%;
-    max-width: 360px;
-    height: 2016px;
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 492px;
+    height: 44px;
+    margin-top: -41px;
+    margin-left: 300px;
     background-color: #ffffff;
+    border-radius: 70px;
+    border: 1px solid #C3D4E966;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 149px;
+    height: 20px;
+    font-weight: 500;
+    line-height: 500;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    flex: 1;
+    font-size: 14px;
+    font-family: Plus Jakarta Sans;
+    color: #596780;
+    padding-left: 25px;
+}
+
+.profil{
+    width: 236px;
+    height: 44px;
+    margin-top: -41px;
+    margin-left: 1220px;
+    gap: 20px;
+}
+
+.icon{
+    width: 44px;
+    height: 44px;
+}
+
+.content{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1440px;
+    height: 2016px;
+    top: 124px;
+    background-color: #F6F7F9;
+}
+
+.NavBarSide{
+    width: 360px;
+    height: 2016px;
+    background-color: #FFFFFF;
     border: 1px solid #F3F5F7;
+}
+
+.NavBarRight{
+    width: 1016px;
+    margin-top: 25px;
+    margin-left: 10px;
+    display:grid;  
+    gap: 40px;
+}
+
+.NavBarRight > div {
+    flex: 1;
 }
 
 .layoutType{
@@ -58,24 +104,6 @@
     width: 176px;
     height: 352px;
     margin-top: 32px;
-    margin-left: 32px;
-    gap: 28px;
-}
-
-.layoutCapacity{
-    display: block;
-    width: 176px;
-    height: 240px;
-    margin-top: 80px;
-    margin-left: 32px;
-    gap: 28px;
-}
-
-.layoutPrice{
-    display: block;
-    width: 296px;
-    height: 104px;
-    margin-top: 80px;
     margin-left: 32px;
     gap: 28px;
 }
@@ -120,9 +148,26 @@
     font-weight: 500;
 }
 
+.layoutCapacity{
+    display: block;
+    width: 176px;
+    height: 240px;
+    margin-top: 80px;
+    margin-left: 32px;
+    gap: 28px;
+}
+
+.layoutPrice{
+    display: block;
+    width: 296px;
+    height: 104px;
+    margin-top: 80px;
+    margin-left: 32px;
+    gap: 28px;
+}
 
 .PRICERANGE input[type="range"] {
-    width: 296px;
+    width: 250px;
     height: 56px;
     gap: 12px;
     background: linear-gradient(to right, #3563E9 0%, #90A3BF 100%);
@@ -149,53 +194,28 @@
     margin-top: 8px;
 }
 
-.search-box {
+.part1{
     display: flex;
-    align-items: center;
-    width: 492px;
-    height: 44px;
-    margin-top: -41px;
-    margin-left: 300px;
-    background-color: #ffffff;
-    border-radius: 70px;
-    border: 1px solid #C3D4E966;
+    align-items: flex-start;
+    gap: 15px;
+    width: 1016px;
+    height: 508px;
+    background-color: #FFFFFF;
 }
 
-.search-box input {
-    border: none;
-    outline: none;
-    width: 149px;
-    height: 20px;
-    font-weight: 500;
-    line-height: 500;
-    letter-spacing: -2%;
-    vertical-align: middle;
-    flex: 1;
-    font-size: 14px;
-    font-family: Plus Jakarta Sans;
-    color: #596780;
-    padding-left: 25px;
-}
-
-.profil{
-    width: 236px;
-    height: 44px;
-    margin-top: -41px;
-    margin-left: 1220px;
-    gap: 20px;
-}
-
-.icon{
-    width: 44px;
-    height: 44px;
+.view123{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    width: 300px;
+    height: 124px;
+    margin-top: 30px;
 }
 
 .view{
     position: relative;
     width: 492px;
     height: 360px;
-    margin-top: 30px;
-    margin-left: 10px;
     border-radius: 10px;
     background-color: #3563E9;
     overflow: hidden;
@@ -244,11 +264,15 @@
     position: relative;
     width: 148px;
     height: 124px;
-    margin-top: 415px;
-    margin-left: -515px;
     border-radius: 10px;
     background-color: #3563E9;
-    overflow: hidden;
+    
+}
+
+.view23{
+    width: 148px;
+    height: 124px;
+    border-radius: 10px;
 }
 
 .imgCar1{
@@ -258,30 +282,14 @@
     margin-left: 15px;
 }
 
-.view23{
-    position: relative;
-    width: 148px;
-    height: 124px;
-    margin-top: 415px;
-    margin-left: 6px;
-    border-radius: 10px;
-}
-
 .detailCar{
     position: relative;
     width: 492px;
     height: 508px;
-    margin-top: 30px;
-    margin-right: 30px;
+    margin-top: 5px;
+    margin-left: 15px;
     border-radius: 10px;
     background-color: #ffffff;
-}
-
-.mainContent{
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    flex-grow: 1;
 }
 
 .carName{
@@ -295,5 +303,216 @@
     vertical-align: middle;
     color: #1A202C;
     margin-top: 15px;
+    margin-left: 24px;
+}
+
+.reviewStar{
+    width: 108px;
+    height: 20px;
+    gap: 2px;
+    margin-top: 10px;
+    margin-left: 24px;
+}
+
+.review440{
+    width: 104px;
+    height: 20px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    vertical-align: middle;
+    color: #596780;
+    margin-left: 140px;
+    margin-top: -20px;
+}
+
+.NISMO{
+    width: 444px;
+    height: 120px;
+    margin-left: 24px;
+    margin-top: 25px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    letter-spacing: -2%;
+    color: #596780;
+}
+
+.Spesification1{
+    width: 92px;
+    height: 28px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #90A3BF;
+}
+
+.Spesification2{
+    width: 92px;
+    height: 28px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #596780;
+}
+
+.price1{
+    width: 200px;
+    height: 32px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: black;
+}
+
+.price2{
+    width: 200px;
+    height: 32px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #90A3BF;
+}
+
+.rent {
+    width: 140px;
+    height: 56px;
+    border-radius: 4px;
+    background-color: #3563E9;
+    color: #FFFFFF;
+    gap: 8px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border: none;
+}
+
+.rent:hover {
+    background-color: #0b2163;
+}
+
+.layoutReview{
+    width: 1016px;
+    height: 452px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.chuReviews{
+    width: 100px;
+    height: 28px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    vertical-align: middle;
+    color: #1A202C;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
     margin-left: 20px;
+}
+
+.totalReview {
+    width: 44px;
+    height: 28px;
+    border-radius: 4px;
+    background-color: #3563E9;
+    color: #FFFFFF;
+    gap: 8px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    padding:0px 15px
+}
+
+.rate{
+    width: 896px;
+    height: 56px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    border-spacing: 6px;
+    letter-spacing: -2%;
+    color: #596780;
+    margin-left: 90px;
+}
+
+.name{
+    width: 1710px;
+    height: 28px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -3%;
+    vertical-align: middle;
+    color: #1A202C;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CEO{
+    width: 896px;
+    height: 20px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -3%;
+    vertical-align: middle;
+    color: #90A3BF;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profilReview{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.showAll{
+    width: 120px;
+    height: 24px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #90A3BF;
+    display: flex;
+    margin-top: 40px;
+    margin-left: 450px;
 }
