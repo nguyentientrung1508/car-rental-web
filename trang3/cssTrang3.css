@@ -2,8 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1440px;
-    height: 2620px;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
 }
 
 .NavBarTop{
@@ -75,14 +77,14 @@
     align-items: flex-start;
     width: 100%;
     max-width: 1440px;
-    height: 2016px;
+    height: 2150px;
     top: 124px;
     background-color: #F6F7F9;
 }
 
 .NavBarSide{
     width: 360px;
-    height: 2016px;
+    height: 2150px;
     background-color: #FFFFFF;
     border: 1px solid #F3F5F7;
 }
@@ -174,7 +176,7 @@
     outline: none;
 }
 
-.PRICERANGE input[type="range"]:-webkit-slider-thumb {
+.PRICERANGE input[type="range"]::-webkit-slider-thumb {
     width: 20px;
     height: 20px;
     background-color: #3563E9;
@@ -515,4 +517,215 @@
     display: flex;
     margin-top: 40px;
     margin-left: 450px;
+}
+
+.recentCar{
+    width: 1050px;
+    height: 24px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #90A3BF;
+
+    margin-left: 10px;
+}
+
+.ViewAll{
+    color: #3563E9;
+    margin-left: 830px;
+}
+
+.Catalogue{
+    width: 1016px;
+    height: auto;
+    gap: 32px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.Catalog{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 20px;
+}
+.catalog-box{
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px;
+    width: 275px;
+    height: 388px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.car-catalog{
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+.car-info {
+    margin-bottom: 8px;
+}
+.car-title {
+    width: 150px;
+    height: 24px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -3%;
+    vertical-align: middle;
+    color: #1A202C;
+    margin: 0;
+}
+.car-type {
+    width: 128px;
+    height: 20px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #90A3BF;
+    margin: 0;
+    margin-top: 10px;
+}
+.car-specs {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    color: #90A3BF;
+}
+.car-specs div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.car-specs img {
+    width: 16px;
+    height: 16px;
+}
+
+.car-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.car-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1A202C;
+}
+
+.car-price .unit {
+    font-size: 14px;
+    font-weight: 500;
+    color: #90A3BF;
+}
+
+.NavBarFooter {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    background-color: #FFFFFF;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ourVision {
+    width: 292px;
+    height: 48px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    color: #13131399 ;
+    margin-top: 15px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-left: 770px;
+    margin-top: -60px;
+}
+
+.link-column h4 {
+    width: 152px;
+    height: 32px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    color: #1A202C ;
+    margin-bottom: 30px;
+}
+
+.link-column a {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    color: #13131399 ;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.link-column a:hover {
+    color: #3b5bff;
+}
+
+.footer-bottom {
+    width: 1300px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #1A202C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #13131329;
+    padding-top: 10px;
+    margin-left: 60px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #1A202C;
+    width: 144px;
+    height: 24px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
 }
