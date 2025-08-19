@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  background-color: #F6F7F9;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.form-section,
+.summary-section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.form-section {
+  flex: 2;
+}
+
+.summary-section {
+  flex: 1;
+  min-width: 320px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.row > div {
+  flex: 1;
+}
+
+.summary-header {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.car-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.car-box img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.car-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.car-rating {
+  color: #999;
+  font-size: 13px;
+}
+
+.price-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.apply-promo {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.apply-promo input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.apply-promo button {
+  padding: 12px 20px;
+  background-color: #3563E9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.apply-promo button:hover {
+  background-color: #2548c1;
+}
+
+.total {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 30px;
+  color: #1a1a1a;
+}
+
+.step-label {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+strong {
+  display: block;
+  margin: 20px 0 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
