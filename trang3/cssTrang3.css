@@ -77,14 +77,14 @@
     align-items: flex-start;
     width: 100%;
     max-width: 1440px;
-    height: 2150px;
+    height: 2350px;
     top: 124px;
     background-color: #F6F7F9;
 }
 
 .NavBarSide{
     width: 360px;
-    height: 2150px;
+    height: 2350px;
     background-color: #FFFFFF;
     border: 1px solid #F3F5F7;
 }
@@ -736,4 +736,93 @@
     line-height: 150%;
     letter-spacing: -2%;
     vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .NavBarTop {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo {
+      margin: 10px auto;
+      font-size: 24px;
+    }
+  
+    .search-box {
+      width: 90%;
+      margin: 10px auto;
+    }
+  
+    .profil {
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .content {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .NavBarSide {
+      width: 100%;
+      height: auto;
+      order: 2;
+    }
+  
+    .NavBarRight {
+      width: 100%;
+      margin: 0;
+      gap: 20px;
+    }
+  
+    .Catalogue {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .Catalog {
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+    }
+  
+    .catalog-box {
+      width: 100%;
+      height: auto;
+    }
+  
+    .footer-links {
+      margin: 20px auto;
+      gap: 40px;
+      justify-content: center;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      margin: 0 auto;
+      width: 90%;
+      text-align: center;
+    }
+  }
+  
+  .show-more-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.show-more-btn {
+    padding: 10px 20px;
+    background-color: #3563E9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 156px;
+    height: 44px;
+    margin-top: 50px;
 }
