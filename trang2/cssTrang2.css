@@ -77,7 +77,7 @@
     align-items: flex-start;
     width: 100%;
     max-width: 1440px;
-    height: 2150px;
+    height: 2000px;
     top: 124px;
     background-color: #F6F7F9;
 }
@@ -196,223 +196,6 @@
     margin-top: 8px;
 }
 
-.part1{
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    width: 1016px;
-    height: 508px;
-    background-color: #FFFFFF;
-}
-
-.view123{
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    width: 300px;
-    height: 124px;
-    margin-top: 30px;
-}
-
-.view{
-    position: relative;
-    width: 492px;
-    height: 360px;
-    border-radius: 10px;
-    background-color: #3563E9;
-    overflow: hidden;
-}
-
-.pattern-bg img {
-    position: absolute;
-}
-
-.title1{
-    width: 372px;
-    height: 96px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 150%;
-    letter-spacing: -3%;
-    vertical-align: middle;
-    color: #FFFFFF;
-    margin-top: 25px;
-    margin-left: 25px;
-}
-
-.title2{
-    width: 284px;
-    height: 48px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -2%;
-    vertical-align: middle;
-    color: #FFFFFF;
-    margin-top: 10px;
-    margin-left: 25px;
-}
-
-.imgCar{
-    width: 380px;
-    height: 120px;
-    margin-top: 28px;
-    margin-left: 60px;
-}
-
-.view1{
-    position: relative;
-    width: 148px;
-    height: 124px;
-    border-radius: 10px;
-    background-color: #3563E9;
-    
-}
-
-.view23{
-    width: 148px;
-    height: 124px;
-    border-radius: 10px;
-}
-
-.imgCar1{
-    width: 116px;
-    height: 36px;
-    margin-top: 40px;
-    margin-left: 15px;
-}
-
-.detailCar{
-    position: relative;
-    width: 492px;
-    height: 508px;
-    margin-top: 5px;
-    margin-left: 15px;
-    border-radius: 10px;
-    background-color: #ffffff;
-}
-
-.carName{
-    width: 220px;
-    height: 40px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 150%;
-    letter-spacing: -3%;
-    vertical-align: middle;
-    color: #1A202C;
-    margin-top: 15px;
-    margin-left: 24px;
-}
-
-.reviewStar{
-    width: 108px;
-    height: 20px;
-    gap: 2px;
-    margin-top: 10px;
-    margin-left: 24px;
-}
-
-.review440{
-    width: 104px;
-    height: 20px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 2%;
-    vertical-align: middle;
-    color: #596780;
-    margin-left: 140px;
-    margin-top: -20px;
-}
-
-.NISMO{
-    width: 444px;
-    height: 120px;
-    margin-left: 24px;
-    margin-top: 25px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 200%;
-    letter-spacing: -2%;
-    color: #596780;
-}
-
-.Spesification1{
-    width: 92px;
-    height: 28px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-    letter-spacing: -2%;
-    vertical-align: middle;
-    color: #90A3BF;
-}
-
-.Spesification2{
-    width: 92px;
-    height: 28px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 150%;
-    letter-spacing: -2%;
-    vertical-align: middle;
-    color: #596780;
-}
-
-.price1{
-    width: 200px;
-    height: 32px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: black;
-}
-
-.price2{
-    width: 200px;
-    height: 32px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: #90A3BF;
-}
-
-.rent {
-    width: 140px;
-    height: 56px;
-    border-radius: 4px;
-    background-color: #3563E9;
-    color: #FFFFFF;
-    gap: 8px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -2%;
-    vertical-align: middle;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    border: none;
-}
-
-.rent:hover {
-    background-color: #0b2163;
-}
-
 .rentMini {
     width: 116px;
     height: 44px;
@@ -435,115 +218,32 @@
     background-color: #0b2163;
 }
 
-.layoutReview{
-    width: 1016px;
-    height: 452px;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-}
-
-.chuReviews{
-    width: 100px;
-    height: 28px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 100%;
-    vertical-align: middle;
-    color: #1A202C;
+.pick{
     display: flex;
     align-items: center;
-    margin-top: 30px;
-    margin-left: 20px;
 }
 
-.totalReview {
-    width: 44px;
-    height: 28px;
-    border-radius: 4px;
+.pickDrop{
+    width: 470px;
+    height: 132px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.switch{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
     background-color: #3563E9;
     color: #FFFFFF;
-    gap: 8px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
+    transform: rotate(90deg);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
-    padding:0px 15px
-}
-
-.rate{
-    width: 896px;
-    height: 56px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 200%;
-    border-spacing: 6px;
-    letter-spacing: -2%;
-    color: #596780;
-    margin-left: 90px;
-}
-
-.name{
-    width: 1710px;
-    height: 28px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 150%;
-    letter-spacing: -3%;
-    vertical-align: middle;
-    color: #1A202C;
-    margin-left: 15px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.CEO{
-    width: 896px;
-    height: 20px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    letter-spacing: -3%;
-    vertical-align: middle;
-    color: #90A3BF;
-    margin-left: 15px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.profilReview{
-    display: flex;
-    margin-top: 30px;
-    margin-left: 20px;
-}
-
-.showAll{
-    width: 120px;
-    height: 24px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -2%;
-    vertical-align: middle;
-    color: #90A3BF;
-    display: flex;
-    margin-top: 40px;
-    margin-left: 450px;
-}
-
-.ViewAll{
-    color: #3563E9;
-    margin-left: 830px;
+    cursor: pointer;
 }
 
 .Catalogue{
@@ -557,7 +257,7 @@
 .Catalog{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .catalog-box{
     background: #FFFFFF;
