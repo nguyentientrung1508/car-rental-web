@@ -455,3 +455,68 @@
     height: 44px;
     margin-top: 50px;
 }
+.location-box{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    margin-top: 20px;
+}
+
+.pickup-box,
+.dropoff-box{
+    width: 432px;
+    height: auto;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.pickup-box h4,
+.dropoff-box h4{
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Plus Jakarta Sans;
+}
+
+.fields{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.field label{
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-family: Plus Jakarta Sans;
+    font-weight: bold;
+}
+
+.field select,
+.field input{
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.switch{
+    width: 60px;
+    height: 60px;
+    background-color: #2A60B7;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
