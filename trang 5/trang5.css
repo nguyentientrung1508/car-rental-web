@@ -1,0 +1,67 @@
+.DetailCarRent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+}
+.NavBarTop{
+    width: 100%;
+    max-width: 1440px;
+    height: 124px;
+    background-color: #FFFFFF;
+}
+.logo{
+    width: 148px;
+    height: 44px;
+    margin-top: 40px; 
+    margin-left: 60px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: -3%;
+    vertical-align: middle;
+    color: #3563E9;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 492px;
+    height: 44px;
+    margin-top: -41px;
+    margin-left: 300px;
+    background-color: #ffffff;
+    border-radius: 70px;
+    border: 1px solid #C3D4E966;
+}
+.search-box input {
+    border: none;
+    outline: none;
+    width: 149px;
+    height: 20px;
+    font-weight: 500;
+    line-height: 500;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    flex: 1;
+    font-size: 14px;
+    font-family: Plus Jakarta Sans;
+    color: #596780;
+    padding-left: 25px;
+}
+.profil{
+    width: 236px;
+    height: 44px;
+    margin-top: -41px;
+    margin-left: 1220px;
+    gap: 20px;
+}
+
+.icon{
+    width: 44px;
+    height: 44px;
+}
