@@ -1,0 +1,480 @@
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #fff;
+      margin: 0;
+      padding-top: 124px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 1440px;
+      display: flex;
+      gap: 40px;
+      padding: 0 48px;
+    }
+    /* Billing Info (Left) */
+    .billing-info {
+      flex: 1 1 860px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .step-header {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 20px;
+      color: #1A202C;
+      margin-bottom: 8px;
+      letter-spacing: 1.5px;
+    }
+    .step-subtitle {
+      font-weight: 500;
+      font-size: 14px;
+      color: #90A3BF;
+      margin-bottom: 32px;
+    }
+    .form-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .form-group {
+      flex: 1 1 48%;
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group label {
+      font-weight: 600;
+      font-size: 16px;
+      color: #1A202C;
+      margin-bottom: 8px;
+    }
+    input, select {
+      height: 56px;
+      border-radius: 10px;
+      border: none;
+      background: #F6F7F9;
+      font-size: 14px;
+      padding: 0 16px;
+      color: #90A3BF;
+      outline: none;
+      transition: border 0.3s;
+    }
+    input:focus, select:focus {
+      border: 2px solid #3563E9;
+      background: #fff;
+      color: #1A202C;
+    }
+   /* === PAYMENT METHOD === */
+.payment-method {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.payment-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.payment-option input[type="radio"] {
+  display: none;
+}
+
+.radio-mark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #1a202c;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.payment-option input[type="radio"]:checked + .radio-mark::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  background: #1a202c;
+  border-radius: 50%;
+}
+
+.label-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a202c;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.icon {
+  height: 20px;
+  width: auto;
+}
+
+/* === CONFIRMATION === */
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background: #f6f7f9;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a202c;
+}
+
+.checkbox-group input[type="checkbox"] {
+  display: none;
+}
+
+.checkmark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #1a202c;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  margin-top: 2px;
+}
+
+.checkbox-group input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  width: 6px;
+  height: 10px;
+  border: solid #1a202c;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.rent-now-btn {
+  background: #3563e9;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 32px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.secure-message {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 12px;
+  color: #90a3bf;
+  max-width: 400px;
+}
+
+.secure-message img {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+}
+
+
+    /* Rental Summary (Right) */
+    .rental-summary {
+      flex: 1 1 480px;
+      background: #F6F7F9;
+      border-radius: 10px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .rental-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rental-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-label {
+  font-weight: 600;
+  color: #1A202C;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+select,
+input[type="date"],
+input[type="time"] {
+  padding: 12px;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #4A4A4A;
+  background-color: #fff;
+}
+
+    .rental-summary .step-header {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1A202C;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .rental-summary .step-subtitle {
+      font-size: 14px;
+      font-weight: 500;
+      color: #90A3BF;
+      margin-bottom: 24px;
+      line-height: 1.4;
+    }
+    .footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+  color: #0A0B1F;
+}
+
+.footer-logo-section {
+  flex: 0 0 40%;
+  max-width: 40%;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.footer-logo-section h2 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #007BFF; /* Màu xanh nổi bật */
+  margin-bottom: 10px;
+}
+
+.footer-logo-section p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 320px;
+  margin: 0;
+  color: #2B2C34;
+}
+
+.footer-links {
+  display: flex;
+  flex: 0 0 60%;
+  max-width: 60%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-right: 15px;
+}
+
+.footer-links .footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #2B2C34;
+}
+
+.footer-links .footer-column h3 {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.footer-links .footer-column a {
+  text-decoration: none;
+  color: #2B2C34;
+}
+
+.footer-bottom {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 12px;
+  color: #2B2C34;
+  box-sizing: border-box;
+}
+
+
+rental-summary {
+  width: 492px;
+  height: 560px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 32px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #2B2C34;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.rental-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #2a61ff;
+}
+
+.rental-note {
+  font-weight: 400;
+  font-size: 12px;
+  color: #8f9bb3;
+  margin-bottom: 24px;
+}
+
+.rental-car-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.car-image {
+  width: 80px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f0f4ff;
+}
+
+.car-details {
+  flex: 1;
+}
+
+.car-name {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 6px;
+  color: #2B2C34;
+}
+
+.car-rating {
+  font-size: 12px;
+  color: #f4b740; /* gold stars */
+}
+
+.car-rating span:last-child {
+  color: #8f9bb3;
+  margin-left: 8px;
+}
+
+.rental-divider {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 24px;
+}
+
+.rental-costs {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.cost-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  color: #2B2C34;
+}
+
+.cost-value {
+  font-weight: 700;
+}
+
+.promo-code {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.promo-code input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px 0 0 8px;
+  font-size: 14px;
+  color: #2B2C34;
+  outline: none;
+}
+
+.promo-code button {
+  padding: 10px 20px;
+  background: #2a61ff;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.promo-code button:hover {
+  background-color: #184fcc;
+}
+
+.total-rental-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 444px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #2B2C34;
+}
+
+.total-cost {
+  font-size: 32px;
+}
+
+.rental-info-subtext {
+  font-weight: 400;
+  font-size: 12px;
+  color: #8f9bb3;
+}
+
+  

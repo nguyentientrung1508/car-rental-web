@@ -249,6 +249,9 @@
     gap: 32px;
     display: flex;
     align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 xe 1 hàng */
+
 }
 
 .Catalog{
@@ -517,4 +520,74 @@
     border-radius: 15px;
     cursor: pointer;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .Catalogue {
+        grid-template-columns: 1fr;
+    }
+
+    .layoutType,
+    .layoutCapacity,
+    .layoutPrice{
+        display: none;
+    }
+
+    .location-box {
+        flex-direction: column;  
+        align-items: stretch;    
+    }
+
+    .pickup-box,
+    .dropoff-box {
+        width: 150px;  
+    }
+
+    .switch-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .switch {
+        margin: 10px auto;
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .field label{
+        font-size: 18px;
+        margin-bottom: 5px;
+        font-family: Plus Jakarta Sans;
+        font-weight: bold;
+    }
+
+    .field select,
+    .field input{
+        padding: 2px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+    
+
+    /* Filter & pick-drop box full width */
+    .filter, 
+    .pickup-box, 
+    .dropoff-box {
+        width: 100%;
+    }
+
+    /* Nút switch nằm chính giữa */
+    .switch {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Footer stack cột dọc */
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
 }

@@ -1,0 +1,530 @@
+ * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 16px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 24px;
+    }
+
+    /* === RENTAL SUMMARY === */
+    .rental-summary {
+      width: 327px;
+      height: 424px;
+    }
+
+    .rental-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1A202C;
+      margin-bottom: 8px;
+    }
+
+    .rental-note {
+      font-size: 12px;
+      color: #90A3BF;
+      margin-bottom: 16px;
+    }
+
+    .car-info {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .car-info img {
+      width: 80px;
+      height: 56px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #f0f0f0;
+    }
+
+    .car-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1A202C;
+      margin-bottom: 4px;
+    }
+
+    .car-rating {
+      font-size: 12px;
+      color: #f4b740;
+    }
+
+    .rental-cost {
+      font-size: 12px;
+      color: #90A3BF;
+      margin-bottom: 12px;
+    }
+
+    .rental-cost strong {
+      float: right;
+      color: #1A202C;
+    }
+
+    .promo-code {
+      display: flex;
+      margin-bottom: 16px;
+    }
+
+    .promo-code input {
+      flex: 1;
+      height: 32px;
+      font-size: 12px;
+      padding: 0 8px;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px 0 0 6px;
+      outline: none;
+    }
+
+    .promo-code button {
+      height: 32px;
+      padding: 0 12px;
+      background: #3563E9;
+      color: #fff;
+      border: none;
+      border-radius: 0 6px 6px 0;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .total {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1A202C;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .total-note {
+      font-size: 12px;
+      color: #90A3BF;
+    }
+
+    /* === BILLING INFO === */
+    .billing-info {
+      width: 326px;
+      height: 516px;
+    }
+
+    .billing-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1A202C;
+      margin-bottom: 8px;
+    }
+
+    .billing-note {
+      font-size: 12px;
+      color: #90A3BF;
+      margin-bottom: 16px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1A202C;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .form-group input {
+      width: 295px;
+      height: 56px;
+      padding: 0 12px;
+      font-size: 12px;
+      border: none;
+      border-radius: 10px;
+      background: #F6F7F9;
+      color: #90A3BF;
+      outline: none;
+    }
+
+    .form-group input:focus {
+      border: 2px solid #3563E9;
+      background: #fff;
+      color: #1A202C;
+    }
+/* === RENTAL INFO === */
+.rental-info {
+  width: 317px;
+  height: 816px;
+  border-radius: 10px; /* card đã có radius, khai báo lại để chắc */
+}
+
+.rental-info .ri-header{
+  display:flex; align-items:center; justify-content:space-between;
+  margin-bottom:8px;
+}
+.rental-info .ri-title{
+  font-size:16px; font-weight:700; color:#1A202C;
+}
+.rental-info .ri-step{
+  font-size:12px; color:#90A3BF;
+}
+.rental-info .ri-note{
+  font-size:12px; color:#90A3BF; margin-bottom:16px;
+}
+
+.ri-section{ margin-bottom:24px; }
+.ri-section .ri-section-title{
+  display:flex; align-items:center; gap:8px;
+  font-size:14px; font-weight:600; color:#1A202C;
+  margin-bottom:16px;
+}
+.ri-section input[type="radio"]{
+  width:16px; height:16px; accent-color:#3563E9; cursor:pointer;
+}
+
+/* dùng lại .form-group của bạn, chỉ bổ sung style cho <select> */
+.form-group select{
+  width: 295px;
+  height: 56px;
+  padding: 0 12px;
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #F6F7F9;
+  color: #90A3BF;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%2390A3BF'%3E%3Cpath d='M7 10l5 5 5-5'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position: right 12px center;
+}
+.form-group select:focus{
+  border: 2px solid #3563E9;
+  background:#fff;
+  color:#1A202C;
+}
+/* === PAYMENT METHOD === */
+.payment-method {
+  width: 327px;
+  height: 2100x;
+  border-radius: 10px;
+}
+
+.pm-header {
+  display:flex; align-items:center; justify-content:space-between;
+  margin-bottom:8px;
+}
+.pm-title {
+  font-size:16px; font-weight:700; color:#1A202C;
+}
+.pm-step {
+  font-size:12px; color:#90A3BF;
+}
+.pm-note {
+  font-size:12px; color:#90A3BF; margin-bottom:16px;
+}
+
+.pm-option {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #EDEDED;
+  margin-bottom:16px;
+  cursor:pointer;
+}
+.pm-option input[type="radio"] {
+  width:16px; height:16px; accent-color:#3563E9;
+  cursor:pointer;
+}
+.pm-option img {
+  height:20px; object-fit:contain;
+}
+
+.pm-credit-fields {
+  background:#F6F7F9;
+  padding:16px;
+  border-radius:10px;
+  margin-bottom:16px;
+}
+.pm-credit-fields .form-group{
+  margin-bottom:12px;
+}
+.pm-credit-fields input{
+  width:100%; height:56px;
+  border:none; border-radius:10px;
+  background:#fff;
+  padding:0 12px;
+  font-size:12px; color:#90A3BF;
+  outline:none;
+}
+.pm-credit-fields input:focus{
+  border:2px solid #3563E9;
+  color:#1A202C;
+}
+.form-group label {
+  display:block;
+  font-size:14px;
+  font-weight:600;
+  color:#1A202C;
+  margin-bottom:6px;
+}
+.form-section {
+  background:#fff;
+  border-radius:12px;
+  padding:20px;
+  box-sizing:border-box;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+  font-family:sans-serif;
+}
+
+.form-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+.form-header h2 {
+  font-size:16px;
+  font-weight:600;
+  color:#1A202C;
+  margin:0;
+}
+
+.form-header span {
+  font-size:12px;
+  color:#718096;
+}
+
+.form-subtitle {
+  font-size:13px;
+  color:#718096;
+  margin:0 0 20px 0;
+}
+
+.checkbox-group {
+  display:flex;
+  align-items:flex-start;
+  margin-bottom:16px;
+}
+
+.checkbox-group input {
+  margin-right:10px;
+  margin-top:4px;
+}
+
+.checkbox-group label {
+  font-size:14px;
+  color:#1A202C;
+  line-height:1.4;
+}
+
+.checkbox-group a {
+  color:#3182CE;
+  text-decoration:none;
+}
+
+.primary-btn {
+  background:#2563EB;
+  color:#fff;
+  font-size:14px;
+  font-weight:600;
+  padding:10px 16px;
+  border:none;
+  border-radius:6px;
+  margin:16px 0;
+  cursor:pointer;
+  width:100%;
+}
+
+.safe-data {
+  display:flex;
+  align-items:flex-start;
+  margin-top:16px;
+}
+
+.safe-icon {
+  margin-right:10px;
+}
+
+.safe-text h3 {
+  font-size:14px;
+  font-weight:600;
+  color:#1A202C;
+  margin:0 0 4px 0;
+}
+
+.safe-text p {
+  font-size:13px;
+  color:#718096;
+  margin:0;
+}
+.confirmation {
+  background:#fff;
+  border-radius:12px;
+  padding:20px;
+  box-sizing:border-box;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+  font-family:sans-serif;
+}
+
+.form-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+.form-header h2 {
+  font-size:16px;
+  font-weight:600;
+  color:#1A202C;
+  margin:0;
+}
+
+.form-header span {
+  font-size:12px;
+  color:#718096;
+}
+
+.form-subtitle {
+  font-size:13px;
+  color:#718096;
+  margin:0 0 20px 0;
+}
+
+.checkbox-row {
+  display:flex;
+  align-items:flex-start;
+  margin-bottom:20px;
+  position:relative;
+}
+
+.checkbox-img {
+  width:24px;
+  height:24px;
+  margin-right:12px;
+  margin-left:16px;
+  margin-top:4px;
+}
+
+.checkbox-text {
+  font-size:16px;
+  color:#1A202C;
+  line-height:1.5;
+}
+
+.checkbox-text a {
+  color:#3182CE;
+  text-decoration:none;
+}
+
+.primary-btn {
+  background:#2563EB;
+  color:#fff;
+  font-size:14px;
+  font-weight:600;
+  padding:10px 16px;
+  border:none;
+  border-radius:6px;
+  margin:16px 0;
+  cursor:pointer;
+  width:100%;
+}
+
+.safe-data {
+  display:flex;
+  align-items:flex-start;
+  margin-top:16px;
+}
+
+.safe-icon {
+  margin-right:10px;
+}
+
+.safe-text h3 {
+  font-size:14px;
+  font-weight:600;
+  color:#1A202C;
+  margin:0 0 4px 0;
+}
+
+.safe-text p {
+  font-size:13px;
+  color:#718096;
+  margin:0;
+}
+
+.footer {
+  width: 327px;   /* theo layout chuẩn */
+  padding: 20px;
+  background: #F8FAFC;
+  font-family: Arial, sans-serif;
+  color: #1A202C;
+}
+
+.footer-logo h2 {
+  font-size: 24px;   /* chữ MORANT */
+  font-weight: 700;
+  color: #2563EB;
+  margin: 0 0 8px 0;
+}
+
+.footer-logo p {
+  font-size: 12px;   /* chữ nhỏ dưới MORENT */
+  color: #718096;
+  margin: 0 0 20px 0;
+  line-height: 1.5;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.footer-col h3 {
+  font-size: 20px;   /* đề mục About, Socials, Community */
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  font-size: 16px;   /* các chữ còn lại */
+  color: #718096;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 16px 0;
+  color: #1A202C;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #1A202C;
+}
