@@ -65,3 +65,120 @@
     width: 44px;
     height: 44px;
 }
+
+.content{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1440px;
+    height: 900px;
+    top: 124px;
+    background-color: #F6F7F9;
+}
+
+.NavBarSide{
+    width: 290px;
+    height: 900px;
+    background-color: #FFFFFF;
+    border: 1px solid #F3F5F7;
+}
+
+.NavBarRight{
+    width: 1086px;
+    margin-top: 25px;
+    margin-left: 10px;
+    display: flex;  
+    gap: 40px;
+}
+
+.NavBarRight > div {
+    flex: 1;
+}
+
+.chuMainMenu{
+    width: 88px;
+    height: 16px;
+    font-family: Plus Jakarta Sans;
+    font-weight:600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #90A3BF;
+    opacity: 0.4;
+}
+
+.active{
+    width: 244px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #3563E9;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.mainMenu{
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #90A3BF;
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.DetailsRentalLeft{
+    width: 534px;
+    height: 836px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.DetailsRentalRight{
+    width: 534px;
+    height: 836px;
+    display: grid;
+}
+
+.top5{
+    width: 524px;
+    height: 324px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.Transaction{
+    width: 524px;
+    height: 480px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.detail{
+    width: 192px;
+    height: 24px;
+    padding-left: 24px;
+    padding-top: 6px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -3%;
+    vertical-align: middle;
+    color: #1A202C;
+}
