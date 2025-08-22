@@ -13,7 +13,7 @@
 .mid-part{
     width: 100%;
     max-width: 1440px;
-    height: 2120px;
+    min-height: 2120px;
     background: #F6F7F9;
     padding-left: 60px;
     padding-right: 60px;

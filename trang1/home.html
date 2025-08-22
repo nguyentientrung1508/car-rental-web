@@ -397,5 +397,48 @@
                 </footer>
             </div>
         </div>
+        <script>
+        //Search
+        const searchInput = document.querySelector(".search-box input");
+        searchInput.addEventListener("input", function() {
+            let keyword = this.value.toLowerCase();
+            document.querySelectorAll(".catalog-box").forEach(box => {
+                let name = box.querySelector(".car-title").textContent.toLowerCase();
+                box.style.visibility = name.includes(keyword) ? "visible" : "hidden";
+            });
+        });
+
+        //Pick-Up Drop-Off
+        document.querySelector(".switch").addEventListener("click", () => {
+            const pickup = document.querySelector(".pickup-box");
+            const dropoff = document.querySelector(".dropoff-box");
+            let temp = pickup.innerHTML;
+            pickup.innerHTML = dropoff.innerHTML;
+            dropoff.innerHTML = temp;
+        });
+
+        //Show more car
+        document.querySelector(".show-more-btn").addEventListener("click", () => {
+            let newCar = document.createElement("div");
+            newCar.className = "catalog-box";
+            newCar.innerHTML = `
+                <div class="car-info">
+                    <h3 class="car-title">Demo Car</h3>
+                    <p class="car-type">SUV</p>
+                </div>
+                <img src="img/car.png" alt="" class="car-catalog">
+                <div class="car-specs">
+                    <div><img src="img/gas-station.png"> 70L</div>
+                    <div><img src="img/manual.png"> Manual</div>
+                    <div><img src="img/profile-2user.png"> 4 People</div>
+                </div>
+                <div class="car-bottom">
+                    <div class="car-price"><span class="price">$50.00/</span><span class="unit">day</span></div>
+                    <button class="rent-btn">Rent Now</button>
+                </div>`;
+            document.querySelector(".catalog").appendChild(newCar);
+        });
+
+        </script>
     </body>
 </html>

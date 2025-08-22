@@ -34,22 +34,22 @@
                 <div class="layoutType">
                     <div class="chuType">TYPE</div>
                     <div class="TYPE" style="margin-top: 20px;">
-                        <label><input type="checkbox"> Sport <span>(10)</span></label>
-                        <label><input type="checkbox"> SUV <span>(12)</span></label>
-                        <label><input type="checkbox"> MPV <span>(16)</span></label>
-                        <label><input type="checkbox"> Sedan <span>(20)</span></label>
-                        <label><input type="checkbox"> Coupe <span>(14)</span></label>
-                        <label><input type="checkbox"> Hatchback <span>(14)</span></label>
+                        <label><input type="checkbox" class="filter-type" value="Sport"> Sport</label>
+                        <label><input type="checkbox" class="filter-type" value="SUV"> SUV</label>
+                        <label><input type="checkbox" class="filter-type" value="MPV"> MPV</label>
+                        <label><input type="checkbox" class="filter-type" value="Sedan"> Sedan</label>
+                        <label><input type="checkbox" class="filter-type" value="Coupe"> Coupe</label>
+                        <label><input type="checkbox" class="filter-type" value="Hatchback"> Hatchback</label>
                     </div>
                 </div>
 
                 <div class="layoutCapacity">
                     <div class="chuType">CAPACITY</div>
                     <div class="TYPE" style="margin-top: 20px;">
-                        <label><input type="checkbox"> 2 Person <span>(10)</span></label>
-                        <label><input type="checkbox"> 4 Person <span>(14)</span></label>
-                        <label><input type="checkbox"> 6 Person <span>(12)</span></label>
-                        <label><input type="checkbox"> 8 Person <span>(16)</span></label>
+                        <label><input type="checkbox" class="filter-seat" value="2"> 2 Person</label>
+                        <label><input type="checkbox" class="filter-seat" value="4"> 4 Person</label>
+                        <label><input type="checkbox" class="filter-seat" value="6"> 6 Person</label>
+                        <label><input type="checkbox" class="filter-seat" value="8"> 8 Person</label>
                     </div>
                 </div>
 
@@ -110,7 +110,7 @@
 
                 <div class="Catalogue">
                     <div class="Catalog">
-                        <div class="catalog-box">
+                        <div class="catalog-box" data-type="Sport" data-seat="2">
                             <div class="car-info">
                                 <h3 class="car-title">Koenigsegg</h3>
                                 <p class="car-type">Sport</p>
@@ -131,7 +131,7 @@
                     </div>
                     
                     <div class="Catalog">
-                        <div class="catalog-box">
+                        <div class="catalog-box" data-type="Sport" data-seat="2">
                             <div class="car-info">
                                 <h3 class="car-title">Nissan GT - R</h3>
                                 <p class="car-type">Sport</p>
@@ -152,7 +152,7 @@
                     </div>
 
                     <div class="Catalog">
-                        <div class="catalog-box">
+                        <div class="catalog-box" data-type="Sport" data-seat="4">
                             <div class="car-info">
                                 <h3 class="car-title">Rolls-Royce</h3>
                                 <p class="car-type">Sport</p>
@@ -175,7 +175,7 @@
 
                 <div class="Catalogue">
                     <div class="Catalog">
-                        <div class="catalog-box">
+                        <div class="catalog-box" data-type="SUV" data-seat="6">
                             <div class="car-info">
                                 <h3 class="car-title">All New Rush</h3>
                                 <p class="car-type">SUV</p>
@@ -197,7 +197,7 @@
                     </div>
                     
                     <div class="Catalog">
-                        <div class="catalog-box">
+                        <div class="catalog-box" data-type="SUV" data-seat="6">
                             <div class="car-info">
                                 <h3 class="car-title">CR - V</h3>
                                 <p class="car-type">SUV</p>
@@ -218,7 +218,7 @@
                     </div>
 
                     <div class="Catalog">
-                        <div class="catalog-box">
+                        <div class="catalog-box" data-type="SUV" data-seat="6">
                             <div class="car-info">
                                 <h3 class="car-title">All New Terios</h3>
                                 <p class="car-type">SUV</p>
@@ -241,7 +241,7 @@
 
                 <div class="Catalogue">
                     <div class="Catalog">
-                        <div class="catalog-box">
+                        <div class="catalog-box" data-type="Hatchback" data-seat="4">
                             <div class="car-info">
                                 <h3 class="car-title">MG ZX Exclusice</h3>
                                 <p class="car-type">Hatchback</p>
@@ -263,7 +263,7 @@
                     </div>
                     
                     <div class="Catalog">
-                        <div class="catalog-box">
+                        <div class="catalog-box" data-type="SUV" data-seat="6">
                             <div class="car-info">
                                 <h3 class="car-title">New MG ZS</h3>
                                 <p class="car-type">SUV</p>
@@ -284,7 +284,7 @@
                     </div>
 
                     <div class="Catalog">
-                        <div class="catalog-box">
+                        <div class="catalog-box" data-type="Hatchback" data-seat="4">
                             <div class="car-info">
                                 <h3 class="car-title">MG ZX Excite</h3>
                                 <p class="car-type">Hatchback</p>
@@ -349,5 +349,58 @@
             
         </div>
     </div>
+
+        <script>
+            
+        //Search
+        const searchInput = document.querySelector(".search-box input");
+        searchInput.addEventListener("input", function() {
+            let keyword = this.value.toLowerCase();
+            document.querySelectorAll(".catalog-box").forEach(box => {
+                let name = box.querySelector(".car-title").textContent.toLowerCase();
+                box.style.visibility = name.includes(keyword) ? "visible" : "hidden";
+            });
+        });
+
+        //Pick-Up Drop-Off
+        document.querySelector(".switch").addEventListener("click", () => {
+            const pickup = document.querySelector(".pickup-box");
+            const dropoff = document.querySelector(".dropoff-box");
+            let temp = pickup.innerHTML;
+            pickup.innerHTML = dropoff.innerHTML;
+            dropoff.innerHTML = temp;
+        });
+
+        function applyFilters() {
+        // Lấy các giá trị được chọn
+        const selectedTypes = Array.from(document.querySelectorAll(".filter-type:checked")).map(cb => cb.value);
+        const selectedSeats = Array.from(document.querySelectorAll(".filter-seat:checked")).map(cb => cb.value);
+
+        document.querySelectorAll(".catalog-box").forEach(car => {
+            const carType = car.dataset.type;
+            const carSeat = car.dataset.seat;
+
+            let match = true;
+
+            // Nếu chọn type → xe phải thuộc type đó
+            if (selectedTypes.length > 0 && !selectedTypes.includes(carType)) {
+            match = false;
+            }
+
+            // Nếu chọn seat → xe phải khớp seat
+            if (selectedSeats.length > 0 && !selectedSeats.includes(carSeat)) {
+            match = false;
+            }
+
+            car.style.visibility = match ? "visible" : "hidden";
+        });
+        }
+
+        // Gắn event cho tất cả checkbox
+        document.querySelectorAll(".filter-type, .filter-seat").forEach(cb => {
+        cb.addEventListener("change", applyFilters);
+        });
+        </script>
+
 </body>
 </html>

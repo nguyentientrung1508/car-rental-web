@@ -541,9 +541,29 @@
     margin-left: 450px;
 }
 
+.recentCar{
+    height: 24px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #90A3BF;
+}
+
 .ViewAll{
+    width: 64px;
+    height: 24px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
     color: #3563E9;
     margin-left: 830px;
+    font-family: Plus Jakarta Sans;
 }
 
 .Catalogue{
